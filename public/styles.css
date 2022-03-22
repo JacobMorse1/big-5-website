@@ -145,13 +145,14 @@ a:hover {
 /* PARKS PAGE */
 .park-photos{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .park-pics {
     display: grid;
     position: relative;
-    left: 25%;
-    max-height: 350px;
-    max-width: 350px;  
+    max-height: 250px;
+    max-width: 250px;  
     margin: 25px;
     border: 2px black solid;
 
@@ -161,5 +162,6 @@ a:hover {
     display: flex;
     border: 2px black solid;
     padding: 5px;
+    background-color: beige;
 }
 
