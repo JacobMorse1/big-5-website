@@ -144,51 +144,114 @@ a:hover {
 
 /* ---PARKS PAGE--- */
 
-.park-body-container {
-    display: flex;
-    align-content: flex-start;
-}
 
-.header-name {
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: beige;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 1px;
-}
-
-.park-grid {
+section {
     display: grid;
-    position: static;
-    left: 20%;
-    grid-auto-rows: auto;
-    width: 80%;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
 }
-
-
-.park-photos{
-    display: flex;
-    justify-content: flex-end;
+.park-header {
+    display: flexbox;
+    justify-content: center;
     align-items: center;
-}
-.park-pics {
-    display: grid;
-    position: relative;
-    max-height: 250px;
-    max-width: 250px;  
-    margin: 25px;
-    border: 2px black solid;
-
-}
-
-.review-container {
-    display: flex;
-    border: 2px black solid;
     padding: 5px;
-    background-color: beige;
+    color: black;
+    background: lightgray;
+    border: 1px black solid;
+    border-radius: 2px;
+}
+#park-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.park-adventures {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    background: lightgray;
+    border: 1px black solid;
+    border-radius: 2px;
+}
+#adventure-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#adventure-list {
+    display: flexbox;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.park-locations {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    background: lightgray;
+    border: 1px black solid;
+    border-radius: 2px;
+}
+#location-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#location-list {
+    display: flexbox;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.park-reviews {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    background: lightgray;
+    border: 1px black solid;
+    border-radius: 2px;
+}
+#reviews-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#review-container {
+    display: flexbox;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0px; */
+    max-height: 150px;
+    max-width: 100%; 
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.park-pics {
+    max-height: 150px;
+    max-width: 300px;  
+    margin: 10px;
+    border: 2px black solid;
+
 }
 
