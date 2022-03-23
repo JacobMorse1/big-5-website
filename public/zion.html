@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zion National Park</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,44 +24,46 @@
             </div>
         </div>
     </header>
-    <div class="top-header">
-        <img src="">
+    <div class="park-body-container">
         <div class="header-name">
             <h2>Park Name</h2>
+            <p class="park-about-paragraph">history, intro</p>
+        </div>
+        <div class="park-grid">
+            <div class="park-grid" id="adventure-container">
+                <h3 class="top-right">Adventures</h3>
+                <ul class="adventure-list">
+                    <li>activity1</li>
+                    <li>activity2</li>
+                    <li>activity3</li>
+                </ul>
+            </div>
+            <div class="park-grid" id="location-container">
+                <h3 class="middle-right">Must See's</h3>
+                <ul class="location-list">
+                    <li>location1</li>
+                    <li>location2</li>
+                    <li>location3</li>                    
+                </ul>
+            </div>
+            <div class="park-grid" id="photo-container">
+                <div class="park-photos">
+                    <img class="park-pics" src="../pictures/zion-pictures/alex-donnachie-tvg2AeJHfbM-unsplash.jpg">
+                    <img class="park-pics" src="../pictures/zion-pictures/danika-perkinson-Cg9Y39NW5NQ-unsplash.jpg">
+                    <img class="park-pics" src="../pictures/zion-pictures/joe-borek-Gif5wMp0hrw-unsplash.jpg">
+                    <img class="park-pics" src="../pictures/zion-pictures/karan-chawla-aHdAdA0JzLE-unsplash.jpg">        
+                </div>
+            </div>
+            <div class="park-grid" id="review-container">
+                <div class="review-container">
+                    <input class="first-name" type="text" placeholder="First Name">
+                    <input class="last-initial" type="text" placeholder="I">
+                    <input class="text-input" type="text" placeholder="Enter experience here.">
+                    <input type="submit" id="submit-button" value="Submit" >
+                </div>
+            </div>
         </div>
     </div>
-    <div class="park-header">
-        <h3>About</h3>
-        <p>history, intro</p>
-    </div>
-    <div class="adventure-header">
-        <h3>Adventures</h3>
-        <ul class="adventure-list">
-            <li>activity1</li>
-            <li>activity2</li>
-            <li>activity3</li>
-            <li>activity4</li>
-        </ul>
-    </div>
-    <div>
-        <h3 class="location-header">Must See's</h3>
-        <h4>local1</h4>
-        <h4>local2</h4>
-        <h4>local3</h4>
-    </div>
-    <div class="park-photos">
-        <img class="park-pics" src="../pictures/zion-pictures/alex-donnachie-tvg2AeJHfbM-unsplash.jpg">
-        <img class="park-pics" src="../pictures/zion-pictures/danika-perkinson-Cg9Y39NW5NQ-unsplash.jpg">
-        <img class="park-pics" src="../pictures/zion-pictures/joe-borek-Gif5wMp0hrw-unsplash.jpg">
-        <img class="park-pics" src="../pictures/zion-pictures/karan-chawla-aHdAdA0JzLE-unsplash.jpg">        
-    </div>
-    <div class="review-container">
-        <input class="first-name" type="text" placeholder="First Name">
-        <input class="last-initial" type="text" placeholder="I">
-        <input class="text-input" type="text" placeholder="Enter experience here.">
-        <input type="submit" id="submit-button" value="Submit" >
-    </div>
-    
     
 
     <script src="server.js"></script>
