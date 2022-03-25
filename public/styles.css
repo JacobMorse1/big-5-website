@@ -74,20 +74,25 @@ a:hover {
     display: flex;
     align-content: flex-start;
 }
+.home-grid {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: repeat (5, 100px);
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+
+}
+.about-section {
+    grid-row: 1/6 ;
+}
+
 
 .about-section {
     display: flexbox;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    max-width: 500px;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 15px;
+    margin: 20px;
     padding: 15px;
-    background-color: var(--color-secondary-dark);
-    border-radius: 1px;
 }
 
 .about-header {
@@ -96,25 +101,18 @@ a:hover {
     color: var(--color-text);
 }
 .about-paragraph {
-    max-width: 400px;
-    color: var(--color-text);
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
-#location-image {
-    margin-top: 25px;
-    margin-left: 100px;
-    max-width: 500px;
-    max-height: 250px;
-}
-
-.grid-1 {
-    display: grid;
-    position:absolute;
-    left: 25%;
-    grid-auto-rows: auto;
-    width: 75%;    
+ #location-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    max-width: 400px;
+    max-height: 200px;
 }
 
 .right {
@@ -124,10 +122,7 @@ a:hover {
     margin-top: 2.5px;
     margin-bottom: 2.5px;
 }
-.right:hover {
-    padding: 35px;
-    border: 3px var(--color-primary) solid;
-}
+
 #row1 {
     background-image: url("https://image.shutterstock.com/image-photo/panoramic-zion-canyon-seen-angels-260nw-1488717758.jpg");
     background-color: #cccccc;
@@ -135,6 +130,7 @@ a:hover {
     text-align: center;
     text-decoration-color:var(--color-text);
 }
+
 #row2 {
     background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/panoramic-the-castle-formation-capitol-reef-national-park-dave-welling.jpg");
     background-color: #cccccc;
@@ -162,12 +158,12 @@ a:hover {
     background-position: center;
     text-align: center;
     text-decoration-color: var(--color-light);
-}
+} */
 
 /* ---PARKS PAGE--- */
 
 
-section {
+.park-grid {
     display: grid;
     grid-template-columns: 24% 35% 35%;
     grid-template-rows: 300px 300px;
@@ -248,11 +244,9 @@ section {
     border-radius: 2px;
 }
 .review-column-container {
-    /* height: 100%; */
-    /* width: 100%; */
-    column-count: 2;
-    column-gap: 3px;
-    column-width: 130px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 80px;
 }
 #reviews-header {
     display: flex;
@@ -267,7 +261,11 @@ section {
     justify-content: center;
     justify-content: center;
     padding: 5px;
-    padding-bottom: 5px;
+}
+#input-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #first-name {
@@ -276,14 +274,14 @@ section {
     margin-left: 20px;
 }
 #last-initial {
-    display: flexbox;
+    /* display: flexbox; */
     max-width: 20px;
     margin: 10px;
     margin-right: 0px;
 }
 
 #text-input {
-    display: flex;
+    /* display: flexbox; */
     width: 75%;
     padding-bottom: 75px;
     box-sizing: border-box;
@@ -292,26 +290,27 @@ section {
 }
 #submit-button {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    /* float: left; */
     margin-top: 10px;
     margin-left: 20px
 }
 
-#review-container {
+.review-container {
     display: flexbox;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 350px;
+     padding: 5px;
 }
 .board {
     max-width: 50%;
     width: 50%;
-    /* text-align: center; */
+    text-align: center;
     padding: 5px;
 }
 #board-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text-input {
     display: flex;
     justify-content: center;
     align-items: center;
