@@ -170,13 +170,14 @@ a:hover {
 section {
     display: grid;
     grid-template-columns: 24% 35% 35%;
-    grid-template-rows: 500px;
+    grid-template-rows: 300px 300px;
     grid-gap: 20px;
     color: var(--color-secondary-dark);
     font-size: 20px;
     padding: 20px;
 }
 .park-header {
+    grid-row: 1 / 3;
     display: flexbox;
     justify-content: center;
     align-items: center;
@@ -239,6 +240,7 @@ section {
     margin-left: 50px;
 }
 .park-reviews {
+    grid-column: 2/4;
     padding: 5px;
     color: black;
     background: var(--color-white);
@@ -246,6 +248,8 @@ section {
     border-radius: 2px;
 }
 .review-column-container {
+    /* height: 100%; */
+    /* width: 100%; */
     column-count: 2;
     column-gap: 3px;
     column-width: 130px;
@@ -255,19 +259,15 @@ section {
     justify-content: center;
     align-items: flex-start;
 }
-#review-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-#input-container {
-    display: flex;
-    flex-direction: column;
+.input-container {
+    display: flexbox;
+    /* flex-direction: column; */
+    height: 350px;
     justify-content: center;
     justify-content: center;
     padding: 5px;
+    padding-bottom: 5px;
 }
 
 #first-name {
@@ -284,25 +284,40 @@ section {
 
 #text-input {
     display: flex;
-    width: 60%;
-    padding-bottom: 150px;
+    width: 75%;
+    padding-bottom: 75px;
     box-sizing: border-box;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
-#rating {
-    display: flexbox;
-    margin: 0;
-    padding: 0;
+#submit-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* float: left; */
+    margin-top: 10px;
+    margin-left: 20px
 }
 
+#review-container {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .board {
     max-width: 50%;
     width: 50%;
-    text-align: center;
+    /* text-align: center; */
     padding: 5px;
 }
+#board-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* --- TOP PICTURES/PARK */
+/* --- TOP PICTURES/PARK --- */
 .picture-container {
     display: flex;
     justify-content: center;
