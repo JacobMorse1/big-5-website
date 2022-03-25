@@ -16,6 +16,7 @@
     --color-primary: #808080;
     --color-text: #1A281F;
     --color-light: #F8F4E3;
+    --color-white: white;
 }
 
 body {
@@ -168,8 +169,8 @@ a:hover {
 
 section {
     display: grid;
-    grid-template-columns: 400px 800px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 24% 35% 35%;
+    grid-template-rows: 500px;
     grid-gap: 20px;
     color: var(--color-secondary-dark);
     font-size: 20px;
@@ -181,8 +182,8 @@ section {
     align-items: center;
     padding: 5px;
     color: var(--color-text);
-    background: var(--color-secondary-dark);
-    border: 1px black solid;
+    background: var(--color-white);
+    /* border: 1px black solid; */
     border-radius: 2px;
 }
 #park-header {
@@ -202,8 +203,8 @@ section {
     align-items: center;
     padding: 5px;
     color: var(--color-text);
-    background: var(--color-secondary-dark);
-    border: 1px black solid;
+    background: var(--color-white);
+    /* border: 1px black solid; */
     border-radius: 2px;
 }
 #adventure-header {
@@ -223,8 +224,8 @@ section {
     align-items: center;
     padding: 5px;
     color: var(--color-text);
-    background: var(--color-secondary-dark);
-    border: 1px black solid;
+    background: var(--color-white);
+    /* border: 1px black solid; */
     border-radius: 2px;
 }
 #location-header {
@@ -240,9 +241,14 @@ section {
 .park-reviews {
     padding: 5px;
     color: black;
-    background: white;
-    border: 1px black solid;
+    background: var(--color-white);
+    /* border: 1px black solid; */
     border-radius: 2px;
+}
+.review-column-container {
+    column-count: 2;
+    column-gap: 3px;
+    column-width: 130px;
 }
 #reviews-header {
     display: flex;
@@ -255,6 +261,40 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#first-name {
+    display: flexbox;
+    max-width: 50%;
+    margin-left: 20px;
+}
+#last-initial {
+    display: flexbox;
+    max-width: 20px;
+    margin: 10px;
+    margin-right: 0px;
+}
+
+#text-input {
+    display: flex;
+    width: 60%;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+#rating {
+    display: flexbox;
+    margin: 0;
+    padding: 0;
+}
+
 .board {
     max-width: 50%;
     width: 50%;
@@ -262,6 +302,7 @@ section {
     padding: 5px;
 }
 
+/* --- TOP PICTURES/PARK */
 .picture-container {
     display: flex;
     justify-content: center;
