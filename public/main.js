@@ -23,7 +23,7 @@ const clearReviews = () => {
 const getReviews = () => {
     clearReviews()
 
-    axios.get(`${baseURL}/reviews/?id=1`)
+    axios.get(`${baseURL}/reviews`)
     .then(function(res) {
         for(i = 0; i < res.data.length; i++) {
             createReviewCard(res.data[i])
@@ -40,7 +40,7 @@ const createReview = (event) => {
     clearReviews()
     let body = {
         firstName: firstNameInput.value,
-        lastName: lastInitialInput.value,
+        lastInitial: lastInitialInput.value,
         review: textInput.value
     }
     
@@ -50,11 +50,12 @@ const createReview = (event) => {
                 createReviewCard(res.data[i])
             };
         });
-        firstNameInput.value = '';
-        lastInitialInput.value = '';
-        textInput.value = '';
+        firstNameInput.value = ''
+        lastInitialInput.value = ''
+        textInput.value = ''
     }
     
 submitBtn.addEventListener('click', createReview)
+submitBtn.addEventListener('submit', createReview)
     
 getReviews()

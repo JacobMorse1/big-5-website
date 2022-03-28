@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Canyonlands National Park</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,34 +24,52 @@
             </div>
         </div>
     </header>
-    <div class="top-header">
-        <img src="">
-        <div class="header-name">
-            <h2>Park Name</h2>
+    <div class="picture-container">
+        <img class="park-pics" src="../pictures/zion-pictures/alex-donnachie-tvg2AeJHfbM-unsplash.jpg">
+        <img class="park-pics" src="../pictures/zion-pictures/danika-perkinson-Cg9Y39NW5NQ-unsplash.jpg">
+        <img class="park-pics" src="../pictures/zion-pictures/joe-borek-Gif5wMp0hrw-unsplash.jpg">
+        <img class="park-pics" src="../pictures/zion-pictures/karan-chawla-aHdAdA0JzLE-unsplash.jpg">  
+        <img class="park-pics" src="../pictures/zion-pictures/alec-krum-8CYBDkEjKOg-unsplash.jpg">
+        <img class="park-pics" src="../pictures/zion-pictures/dex-ezekiel-NsuyAdSllgc-unsplash.jpg">
+        <img class="park-pics" src="../pictures/zion-pictures/dulcey-lima-p26m299jyn4-unsplash.jpg">
+    </div>
+    <section class="park-grid">
+        <div class="park-header">
+            <h3 id="park-header">CANYONLANDS</h3>
+            <p id="about-text">Zion National Park was established in </p>
         </div>
-    </div>
-    <div class="about-header">
-        <h3>About</h3>
-        <p>history, intro</p>
-    </div>
-    <div class="adventure-header">
-        <h3>Adventures</h3>
-        <ul class="adventure-list">
-            <li>activity1</li>
-            <li>activity2</li>
-            <li>activity3</li>
-            <li>activity4</li>
-        </ul>
-    </div>
-    <div>
-        <h3 class="location-header">Locations</h3>
-        <h4>local1</h4>
-        <h4>local2</h4>
-        <h4>local3</h4>
-    </div>
-    
-    
+        <div class="park-adventures">
+            <h3 id="adventure-header">ADVENTURES</h3>
+            <ul id="adventure-list">
+                <li>Repelling</li>
+                <li>Hiking</li>
+                <li>Climbing</li>
+            </ul>
+        </div>
+        <div class="park-locations">
+            <h3 id="location-header">MUST SEE'S</h3>
+            <ul id="location-list">
+                <li>Angel's Landing</li>
+                <li>The Subway</li>
+                <li>The Narrows</li>
+            </ul>
+        </div>
+        <div class="park-reviews">
+            <h3 id="reviews-header">PARK REVIEWS</h3>
+            <div class="review-column-container">
+                <div class="input-container">
+                    <h4 id="input-header">Enter Your Own Review</h4>
+                    <input id="first-name" type="text" placeholder="First Name">
+                    <input id="last-initial" type="text" placeholder=" I. ">
+                    <input id="text-input" type="text" placeholder="Enter experience here.">
+                    <input id="submit-button" type="submit" value="Submit">
+                </div>
+                <div class="review-container"></div>
+            </div>
+        </div>
+    </section>
 
-    <script src="server.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

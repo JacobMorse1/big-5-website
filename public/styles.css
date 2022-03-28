@@ -180,31 +180,36 @@ a:hover {
     display: flexbox;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: var(--color-text);
     background: var(--color-white);
-    /* border: 1px black solid; */
     border-radius: 2px;
 }
 #park-header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin: 20px;
 }
 #about-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 600px;
+    font-size: 12pt;
+    overflow-y: auto;
+    width: 100%;
 }
 
 .park-adventures {
     display: flexbox;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
     padding: 5px;
     color: var(--color-text);
     background: var(--color-white);
-    /* border: 1px black solid; */
     border-radius: 2px;
 }
 #adventure-header {
@@ -216,6 +221,10 @@ a:hover {
     display: flexbox;
     margin-top: 20px;
     margin-left: 50px;
+}
+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .park-locations {
@@ -243,13 +252,13 @@ a:hover {
     padding: 5px;
     color: black;
     background: var(--color-white);
-    /* border: 1px black solid; */
+    max-height: 100%;
     border-radius: 2px;
 }
 .review-column-container {
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-gap: 80px;
+    grid-template-columns: 30% 50%;
+    grid-gap: 60px;
 }
 #reviews-header {
     display: flex;
@@ -259,8 +268,7 @@ a:hover {
 
 .input-container {
     display: flexbox;
-    /* flex-direction: column; */
-    height: 350px;
+    height: 100%;
     justify-content: center;
     justify-content: center;
     padding: 5px;
@@ -272,19 +280,17 @@ a:hover {
 }
 
 #first-name {
-    display: flexbox;
     max-width: 50%;
     margin-left: 20px;
 }
 #last-initial {
-    /* display: flexbox; */
+    display: flexbox;
     max-width: 20px;
     margin: 10px;
     margin-right: 0px;
 }
 
 #text-input {
-    /* display: flexbox; */
     width: 75%;
     padding-bottom: 75px;
     box-sizing: border-box;
@@ -300,7 +306,7 @@ a:hover {
 .review-container {
     display: flexbox;
     height: 250px;
-    width: 300px;
+    width: 100%;
     padding: 5px;
     overflow-y: auto;
 }
@@ -322,14 +328,15 @@ a:hover {
     align-items: center;
     max-height: 150px;
     max-width: 100%; 
-    margin-top: 15px;
-    margin-bottom: 8px;
+    margin: 15px 10px 10px 5px;
+    overflow-x: auto;
 }
 
 .park-pics {
-    max-height: 150px;
+    max-height: 125px;
     max-width: 300px;  
-    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     border: 2px black solid;
 }
 

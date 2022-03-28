@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Capitol Reef National Park</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,47 +24,64 @@
             </div>
         </div>
     </header>
-    <div class="header-name">
-        <h2>Park Name</h2>
-        <p class="park-about-paragraph">history, intro</p>
+    <div class="picture-container">
+        <img class="park-pics" src="../pictures/capitol/backroad-packers-fOLhVpOycUA-unsplash.jpg">
+        <img class="park-pics" src="../pictures/capitol/evan-sanchez-q0nDIxv3UI0-unsplash.jpg">
+        <img class="park-pics" src="../pictures/capitol/jahmanz-williams-sM9s1ggnaZY-unsplash.jpg">
+        <img class="park-pics" src="../pictures/capitol/luis-muller-Ls3-QBvUgZI-unsplash.jpg">  
+        <img class="park-pics" src="../pictures/capitol/backroad-packers-rKblaSktzVA-unsplash.jpg">
+        <img class="park-pics" src="../pictures/capitol/john-bewlay-ymse1hih9iI-unsplash.jpg">
+        <img class="park-pics" src="../pictures/capitol/lisha-riabinina-Pb_UEMq1iT0-unsplash.jpg">
     </div>
-    <div>
-        <div class="park-grid" id="adventure-container">
-            <h3 class="top-right">Adventures</h3>
-            <ul class="adventure-list">
-                <li>activity1</li>
-                <li>activity2</li>
-                <li>activity3</li>
+    <section class="park-grid">
+        <div class="park-header">
+            <h3 id="park-header">CAPITOL REEF</h3>
+            <p id="about-text">Capitol Reef National Park was designated a national monument on August 2, 1937, 
+                by President Franklin D. Roosevelt to protect the area's colorful canyons, ridges, buttes, and 
+                monoliths; however, it was not until 1950 that the area officially opened to the public. Capitol Reef
+                encompasses the Waterpocket Fold, a warp in the earth's crust that is 65 million years old. It
+                is the largest exposed monocline in North America. In this fold, newer and older layers of earth
+                folded over each other in an S-shape. This warp, probably caused by the same colliding continental
+                plates that created the Rocky Mountains, has weathered and eroded over millennia to expose layers of
+                rock and fossils. The park is filled with brilliantly colored sandstone cliffs, gleaming white domes,
+                and contrasting layers of stone and earth.
+            </p>
+        </div>
+        <div class="park-adventures">
+            <h3 id="adventure-header">ADVENTURES</h3>
+            <ul id="adventure-list">
+                <li>Backpack</li>
+                <li>Hiking</li>
+                <li>Camping</li>
+                <li>Canyoneering</li>
             </ul>
         </div>
-        <div class="park-grid" id="location-container">
-            <h3 class="middle-right">Must See's</h3>
-            <ul class="location-list">
-                <li>location1</li>
-                <li>location2</li>
-                <li>location3</li>                    
+        <div class="park-locations">
+            <h3 id="location-header">MUST SEE'S</h3>
+            <ul id="location-list">
+                <li>Cassidy Arch</li>
+                <li>Hickman Bridge</li>
+                <li>Frying Pan</li>
+                <li>Brimhall Natural Bridge</li>
+                <li>Halls Creek Narrows</li>
             </ul>
         </div>
-        <div class="park-grid" id="photo-container">
-            <div class="park-photos">
-                <img class="park-pics" src="../pictures/zion-pictures/alex-donnachie-tvg2AeJHfbM-unsplash.jpg">
-                <img class="park-pics" src="../pictures/zion-pictures/danika-perkinson-Cg9Y39NW5NQ-unsplash.jpg">
-                <img class="park-pics" src="../pictures/zion-pictures/joe-borek-Gif5wMp0hrw-unsplash.jpg">
-                <img class="park-pics" src="../pictures/zion-pictures/karan-chawla-aHdAdA0JzLE-unsplash.jpg">        
+        <div class="park-reviews">
+            <h3 id="reviews-header">PARK REVIEWS</h3>
+            <div class="review-column-container">
+                <div class="input-container">
+                    <h4 id="input-header">Enter Your Own Review</h4>
+                    <input id="first-name" type="text" placeholder="First Name">
+                    <input id="last-initial" type="text" placeholder=" I. ">
+                    <input id="text-input" type="text" placeholder="Enter experience here.">
+                    <input id="submit-button" type="submit" value="Submit">
+                </div>
+                <div class="review-container"></div>
             </div>
         </div>
-        <div class="park-grid" id="review-container">
-            <div class="review-container">
-                <input class="first-name" type="text" placeholder="First Name">
-                <input class="last-initial" type="text" placeholder="I">
-                <input class="text-input" type="text" placeholder="Enter experience here.">
-                <input type="submit" id="submit-button" value="Submit" >
-            </div>
-        </div>
-    </div>
-    
-    
+    </section>
 
-    <script src="server.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
