@@ -299,25 +299,20 @@ a:hover {
 
 .review-container {
     display: flexbox;
-    height: 350px;
-     padding: 5px;
-}
-.board {
-    max-width: 50%;
-    width: 50%;
-    text-align: center;
+    height: 250px;
+    width: 300px;
     padding: 5px;
+    overflow-y: auto;
 }
-#board-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#text-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ #board {
+    text-align: flex-start;
+    padding: 5px;
+    margin-top: 20px;
+} 
+
+
+
+
 
 /* --- TOP PICTURES/PARK --- */
 

@@ -37,18 +37,18 @@ const getReviews = (req, res) => {
         res.status(200).send(reviews)
 }
     
-// const createReview = (req, res) => {
-//         let newReview = req.body;
-//         newReview.id = globalID;
-//         reviews.push(newReview);
+const createReview = (req, res) => {
+        let newReview = {...req.body}
+        newReview.id = globalID;
+        reviews.unshift(newReview);
 
-//         res.status(200).send(reviews)
-//         globalID++
-// }
+        res.status(200).send(reviews)
+        globalID++
+}
 
 
 app.get('/reviews', getReviews);
-// app.post('/reviews', createReview)
+app.post('/reviews', createReview)
 
 
 const SERVER_PORT = process.env.PORT || 4040

@@ -1,17 +1,17 @@
-// const { default: axios } = require("axios")
 
-const firstName = document.getElementById("first-name")
-const lastInitial = document.getElementById("last-initial")
+const firstNameInput = document.getElementById("first-name")
+const lastInitialInput = document.getElementById("last-initial")
 const textInput = document.getElementById("text-input")
 const submitBtn = document.getElementById("submit-button")
 const reviewCont = document.querySelector(".review-container")
 
 const baseURL = 'http://localhost:4040'
 
+
 const createReviewCard = (review) => {
     let reviewCard = document.createElement('div')
-    reviewCard.innerHTML = `<h4>${review.firstName} ${review.lastInitial}</h4>
-    <p>${review.review}</p>`
+    reviewCard.setAttribute("id", "board")
+    reviewCard.innerHTML = `<p>"${review.review}"</p> <h4>${review.firstName} ${review.lastInitial}</h4>`
 
     reviewCont.appendChild(reviewCard)
 }
@@ -23,7 +23,7 @@ const clearReviews = () => {
 const getReviews = () => {
     clearReviews()
 
-    axios.get(`${baseURL}/reviews`)
+    axios.get(`${baseURL}/reviews/?id=1`)
     .then(function(res) {
         for(i = 0; i < res.data.length; i++) {
             createReviewCard(res.data[i])
@@ -32,4 +32,29 @@ const getReviews = () => {
     .catch(err => console.log(err))
 }
 
+
+// --ADD REVIEW FUNCTION-- //
+
+const createReview = (event) => {
+    event.preventDefault()
+    clearReviews()
+    let body = {
+        firstName: firstNameInput.value,
+        lastName: lastInitialInput.value,
+        review: textInput.value
+    }
+    
+    axios.post(`${baseURL}/reviews`, body)
+        .then(function(res) {
+            for(i = 0; i < res.data.length; i++) {
+                createReviewCard(res.data[i])
+            };
+        });
+        firstNameInput.value = '';
+        lastInitialInput.value = '';
+        textInput.value = '';
+    }
+    
+submitBtn.addEventListener('click', createReview)
+    
 getReviews()
