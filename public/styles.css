@@ -123,7 +123,7 @@ a:hover {
     margin-bottom: 2.5px;
 }
 .right:hover {
-    color: darkturquoise;
+    color: var(--color-secondary-dark);
 }
 
 #row1 {
@@ -320,6 +320,7 @@ a:hover {
 }
 
 /* --- TOP PICTURES/PARK --- */
+
 .picture-container {
     display: flex;
     justify-content: center;
