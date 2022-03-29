@@ -196,7 +196,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 600px;
+    max-height: 500px;
     font-size: 12pt;
     overflow-y: auto;
     width: 100%;
