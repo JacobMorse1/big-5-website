@@ -1,6 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path')
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
 
 
 const app = express();
@@ -12,7 +12,8 @@ app.use(express.static(path.join(__dirname, "../public")))
 
 // app.get("/", function(req, res) {
 //         res.sendFile(path.join(__dirname, "../public"))
-//     })
+//     });
+
 
 
 const reviews = [
@@ -37,30 +38,30 @@ const reviews = [
 ]
 
 // --FUNCTIONS-- //
-let globalID = 4
+let globalID = 4;
 
     
 const getReviews = (req, res) => {
-        res.status(200).send(reviews)
-}
+        res.status(200).send(reviews);
+};
     
 const createReview = (req, res) => {
-        let newReview = {...req.body}
+        let newReview = {...req.body};
         newReview.id = globalID;
         reviews.unshift(newReview);
 
-        res.status(200).send(reviews)
+        res.status(200).send(reviews);
         globalID++
-}
+};
 
 
 app.get('/reviews', getReviews);
-app.post('/reviews', createReview)
+app.post('/reviews', createReview);
 
 
-const SERVER_PORT = process.env.PORT || 4040
+const port = process.env.PORT || 4040;
 
-app.listen(SERVER_PORT, () => {
-    console.log(`Disco on the ${SERVER_PORT}`)
-})
+app.listen(port, () => {
+    console.log(`Disco on the ${port}`);
+});
 
