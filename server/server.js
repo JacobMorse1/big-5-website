@@ -13,6 +13,21 @@ app.use(express.static(path.join(__dirname, "../public")))
 app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"))
     });
+app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/zion.html"))
+    });
+app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/capitol.html"))
+    });
+app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/canyon.html"))
+    });
+app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/bryce.html"))
+    });    
+app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/arches.html"))
+    });    
 
 
 
