@@ -5,7 +5,7 @@ const textInput = document.getElementById("text-input")
 const submitBtn = document.getElementById("submit-button")
 const reviewCont = document.querySelector(".review-container")
 
-const baseURL = 'http://localhost:4040'
+const baseURL = 'https://big-5-capstone.herokuapp.com/'
 
 
 const createReviewCard = (review) => {
