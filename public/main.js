@@ -5,7 +5,7 @@ const textInput = document.getElementById("text-input")
 const submitBtn = document.getElementById("submit-button")
 const reviewCont = document.querySelector(".review-container")
 
-const baseURL = 'https://big-5-capstone.herokuapp.com'
+// const baseURL = 'https://big-5-capstone.herokuapp.com'
 
 
 const createReviewCard = (review) => {
@@ -23,7 +23,7 @@ const clearReviews = () => {
 const getReviews = () => {
     clearReviews()
 
-    axios.get(`${baseURL}/reviews`)
+    axios.get(`/reviews`)
     .then(function(res) {
         for(i = 0; i < res.data.length; i++) {
             createReviewCard(res.data[i])
@@ -44,7 +44,7 @@ const createReview = (event) => {
         review: textInput.value
     }
     
-    axios.post(`${baseURL}/reviews`, body)
+    axios.post(`/reviews`, body)
         .then(function(res) {
             for(i = 0; i < res.data.length; i++) {
                 createReviewCard(res.data[i])
