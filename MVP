@@ -1,0 +1,26 @@
+BIG 5 Website MVP
+
+Pages
+
+  Home
+  Parks pages(5)
+  Bryce Canyon
+  Zion
+  Arches
+  Canyonlands
+  Capitol Reef
+
+Functionality 
+  Navigate between pages using links in header
+    - They will also have a hover over feature
+  
+  Each park page will provide info specific to that park
+    - Photos of park, POIs, activities available, need to know info
+    - Links to suggested areas and activities
+  
+  Each park page will display reviews posted by users who have visited that page’s park
+    - This will be done using a GET endpoint and handler function
+    - New reviews will be added to the database using a POST endpoint and handler function
+  
+  Users can leave comments w/o login
+    - Comments will require first name, last initial and comment content
